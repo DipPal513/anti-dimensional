@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/index.css">
+
+  </head>
+  <body>
+    <div class="main bg-red-200 p-8">
+      <div class="max-w-screen-lg mx-auto px-2 py-5">
+        <h2 class="text-3xl mb-5 text-center">
+          নিহত ব্যাক্তির তথ্য প্রদান করুন
+        </h2>
+        <form action="" class="bg-white p-5 rounded-xl">
+          <h1 class="font-bold text-center">
+            <span class="text-red-500">*</span>
+            চিহ্নিত তথ্য অবশ্যই প্রদান করতে হবে
+          </h1>
+          <div class="grid grid-cols-2 gap-4 p-4">
+            <div>
+              <div>
+                <label for="#dead_name" class="font-bold"
+                  >নামঃ<span class="text-red-500">*</span></label
+                ><br />
+                <input
+                  type="text"
+                  id="dead_name"
+                  placeholder="নিহত ব্যাক্তির নাম..."
+                  class="rounded-xl border mt-2 shadow-lg mb-4 px-4 py-2 w-full"
+                />
+              </div>
+              <div>
+                <label for="#name" class="mb-3 font-bold"
+                  >আনুমানিক বয়সঃ<span class="text-red-500">*</span></label
+                ><br />
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="বয়স..."
+                  class="rounded-xl mt-2 border shadow-lg mb-4 px-4 py-2 w-full"
+                />
+              </div>
+              <div>
+                <label for="#region" class="mb-3 font-bold"
+                  >ধর্মঃ(ইসলাম, হিন্দু, বৌদ্ধ, খ্রিস্টান)<span class="text-red-500">*</span></label
+                ><br />
+                <input
+                  type="text"
+                  id="religion"
+                  placeholder="ধর্মঃ(ইসলাম, হিন্দু, বৌদ্ধ, খ্রিস্টান) নির্ধারণ করুন..."
+                  class="rounded-xl mt-2 border shadow-lg mb-4 px-4 py-2 w-full"
+                />
+              </div>
+              <div>
+                <label for="#zilla" class="mb-3 font-bold"
+                  >জেলাঃ<span class="text-red-500">*</span></label
+                ><br />
+                <input
+                  type="text"
+                  id="zila"
+                  placeholder="..."
+                  class="rounded-xl mt-2 border shadow-lg mb-4 px-4 py-2 w-full"
+                />
+              </div>
+              <div>
+                <label for="#post" class="mb-3 font-bold"
+                  >পোস্ট কোড<span class="text-red-500">*</span></label
+                ><br />
+                <input
+                  type="text"
+                  id="post"
+                  placeholder="..."
+                  class="rounded-xl mt-2 border shadow-lg mb-4 px-4 py-2 w-full"
+                />
+              </div>
+              <div>
+                <label for="#dead" class="mb-3 font-bold"
+                  >যা দ্বারা নিহতঃ<span class="text-red-500">*</span></label
+                ><br />
+                <input
+                  type="text"
+                  id="dead"
+                  placeholder="..."
+                  class="rounded-xl mt-2 border shadow-lg mb-4 px-4 py-2 w-full"
+                />
+              </div>
+              <div>
+                <label for="#photo" class="mb-3 font-bold"
+                  >জাতীয় পরিচয়পত্র/ জন্মনিবনন্ধন পত্রের ছবি<span class="text-red-500">*</span></label
+                ><br />
+                <input
+                  type="file"
+                  id="photo"
+                  placeholder="..."
+                  class="rounded-xl mt-2 border shadow-lg mb-4 px-4 py-2 w-full"
+                />
+              </div>
+              <div>
+                <label for="#date" class="mb-3 font-bold"
+                  >নিহত হওয়ার তারিখঃ<span class="text-red-500">*</span></label
+                ><br />
+                <input
+                  type="date"
+                  id="date"
+                  placeholder="..."
+                  class="rounded-xl mt-2 border shadow-lg mb-4 px-4 py-2 w-full"
+                />
+              </div>
+              <div>
+                <label for="#num" class="mb-3 font-bold"
+                  >অভিভাবকের মোবাইল নাম্বারঃ<span class="text-red-500">*</span></label
+                ><br />
+                <input
+                  type="number"
+                  id="num"
+                  placeholder="..."
+                  class="rounded-xl mt-2 border shadow-lg mb-4 px-4 py-2 w-full"
+                />
+              </div>
+              <div>
+                <label for="#num" class="mb-3 font-bold"
+                  ><span class="text-red-500">*</span>তথ্য প্রদানকারীর মোবাইল নাম্বারঃ</label
+                ><br />
+                <input
+                  type="number"
+                  id="num"
+                  placeholder="..."
+                  class="rounded-xl mt-2 border shadow-lg mb-4 px-4 py-2 w-full"
+                />
+              </div>
+              <div>
+                <label for="#num" class="mb-3 font-bold"
+                  ><span class="text-red-500">*</span>তথ্য প্রদানকারীর মোবাইল নাম্বারঃ</label
+                ><br />
+                <input
+                  type="file"
+                  id="num"
+                  placeholder="প্রমাণ সরূপ ছবি (মৃত্যু সনদপত্র/প্রত্যায়ন পত্র)*"
+                  class="rounded-xl mt-2 border shadow-lg mb-4 px-4 py-2 w-full"
+                />
+              </div>
+              <button type="submit" class="rounded-full px-16 text-white py-3 bg-[#8684FF]
+              ]">Submit</button>
+            </div>
+            <div>
+                <div>
+                  <label for="#dead_name" class="font-bold"
+                    >বাবার নামঃ<span class="text-red-500">*</span></label
+                  ><br />
+                  <input
+                    type="text"
+                    id="dead_name"
+                    placeholder="নিহত ব্যাক্তির বাবার নাম..."
+                    class="rounded-xl border mt-2 shadow-lg mb-4 px-4 py-2 w-full"
+                  />
+                </div>
+                <div>
+                  <label for="#name" class="mb-3 font-bold"
+                    >লিঙ্গ(পুরুষ, মহিলা, অন্যান্য)<span class="text-red-500">*</span></label
+                  ><br />
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="লিঙ্গ(পুরুষ, মহিলা, অন্যান্য)..."
+                    class="rounded-xl mt-2 border shadow-lg mb-4 px-4 py-2 w-full"
+                  />
+                </div>
+                <div>
+                  <label for="#region" class="mb-3 font-bold"
+                    >বিভাগঃ<span class="text-red-500">*</span></label
+                  ><br />
+                  <input
+                    type="text"
+                    id="religion"
+                    placeholder="..."
+                    class="rounded-xl mt-2 border shadow-lg mb-4 px-4 py-2 w-full"
+                  />
+                </div>
+                <div>
+                  <label for="#zilla" class="mb-3 font-bold"
+                    >উপজেলাঃ<span class="text-red-500">*</span></label
+                  ><br />
+                  <input
+                    type="text"
+                    id="zila"
+                    placeholder="..."
+                    class="rounded-xl mt-2 border shadow-lg mb-4 px-4 py-2 w-full"
+                  />
+                </div>
+                <div>
+                  <label for="#post" class="mb-3 font-bold"
+                    >পোস্ট অফিসঃ<span class="text-red-500">*</span></label
+                  ><br />
+                  <input
+                    type="text"
+                    id="post"
+                    placeholder="..."
+                    class="rounded-xl mt-2 border shadow-lg mb-4 px-4 py-2 w-full"
+                  />
+                </div>
+                <div>
+                  <label for="#dead" class="mb-3 font-bold"
+                    >পেশার ধরনঃ<span class="text-red-500">*</span></label
+                  ><br />
+                  <input
+                    type="text"
+                    id="dead"
+                    placeholder="পেশার ধরনঃ..."
+                    class="rounded-xl mt-2 border shadow-lg mb-4 px-4 py-2 w-full"
+                  />
+                </div>
+                <div>
+                  <label for="#identiy" class="mb-3 font-bold"
+                    >পরিচয়পত্র/ জন্মনিবনন্ধন নাম্বারঃ<span class="text-red-500">*</span></label
+                  ><br />
+                  <input
+                    type="number"
+                    id="identiy"
+                    placeholder="..."
+                    class="rounded-xl mt-2 border shadow-lg mb-4 px-4 py-2 w-full"
+                  />
+                </div>
+                <div>
+                  <label for="#date" class="mb-3 font-bold"
+                    >ব্যাক্তির ছবি<span class="text-red-500">*</span></label
+                  ><br />
+                  <input
+                    type="file"
+                    id="date"
+                    placeholder="..."
+                    class="rounded-xl mt-2 border shadow-lg mb-4 px-4 py-2 w-full"
+                  />
+                </div>
+                <div>
+                  <label for="#num" class="mb-3 font-bold"
+                    >যে স্থানে নিহত হয়েছে তার ঠিকানাঃ<span class="text-red-500">*</span></label
+                  ><br />
+                  <input
+                    type="text"
+                    id="num"
+                    placeholder="..."
+                    class="rounded-xl mt-2 border shadow-lg mb-4 px-4 py-2 w-full"
+                  />
+                </div>
+                <div>
+                  <label for="#num" class="mb-3 font-bold"
+                    ><span class="text-red-500">*</span>অভিভাবকের নাম ও সম্পর্কঃ</label
+                  ><br />
+                  <input
+                    type="text"
+                    id="num"
+                    placeholder="..."
+                    class="rounded-xl mt-2 border shadow-lg mb-4 px-4 py-2 w-full"
+                  />
+                </div>
+                <div>
+                  <label for="#num" class="mb-3 font-bold"
+                    ><span class="text-red-500">*</span>তথ্য প্রদানকারীর নামঃ*</label
+                  ><br />
+                  <input
+                    type="text"
+                    id="num"
+                    placeholder="তথ্য প্রদানকারীর নামঃ"
+                    class="rounded-xl mt-2 border shadow-lg mb-4 px-4 py-2 w-full"
+                  />
+                </div>
+                <div>
+                  <label for="#num" class="mb-3 font-bold"
+                    ><span class="text-red-500">*</span>কবরস্থান/শ্মশানঘাটের ঠিকানাঃ*</label
+                  ><br />
+                  <input
+                    type="text"
+                    id="num"
+                    placeholder="কবরস্থান/শ্মশানঘাটের ঠিকানা..."
+                    class="rounded-xl mt-2 border shadow-lg mb-4 px-4 py-2 w-full"
+                  />
+                </div>
+                
+              </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

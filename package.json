@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.9"
+  },
+  "name": "the-untold",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  
+  "scripts": {
+    "build": "npx tailwindcss -i ./css/index.css -o ./dist/index.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
