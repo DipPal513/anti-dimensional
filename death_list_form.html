@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="./dist/index.css">
   </head>
   <body>
-    <div class="main bg-red-200 p-8">
+    <div class="main bg-red-200 sm:p-8">
       <div class="max-w-screen-lg mx-auto px-2 py-5">
         <h2 class="text-3xl mb-5 text-center">
           নিহত ব্যাক্তির তথ্য প্রদান করুন
         </h2>
-        <form action="" class="bg-white p-5 rounded-xl">
+        <form action="" class="bg-white p-3 sm:p-5 rounded-xl">
           <h1 class="font-bold text-center">
             <span class="text-red-500">*</span>
             চিহ্নিত তথ্য অবশ্যই প্রদান করতে হবে
           </h1>
-          <div class="grid grid-cols-2 gap-4 p-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
             <div>
               <div>
                 <label for="#dead_name" class="font-bold"
@@ -140,8 +140,7 @@
                   class="rounded-xl mt-2 border shadow-lg mb-4 px-4 py-2 w-full"
                 />
               </div>
-              <button type="submit" class="rounded-full px-16 text-white py-3 bg-[#8684FF]
-              ]">Submit</button>
+            
             </div>
             <div>
                 <div>
@@ -279,6 +278,8 @@
                 
               </div>
           </div>
+          <button type="submit" class="rounded-full px-16 text-white py-3 bg-[#8684FF]
+          ]">Submit</button>
         </form>
       </div>
     </div>
