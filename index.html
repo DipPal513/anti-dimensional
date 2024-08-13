@@ -25,50 +25,71 @@
       .text-main-color {
         color: #ffb5b5;
       }
-      .cards_wrapper{
+      .cards_wrapper {
         position: relative;
       }
-      .cards_wrapper::before{
+      .cards_wrapper::before {
         content: "";
         position: absolute;
-        background: linear-gradient(#EFF3FF,#F7C6FF,#FF9696);
+        background: linear-gradient(#eff3ff, #f7c6ff, #ff9696);
         width: 100%;
         height: 80%;
         border-radius: 20px;
         bottom: -20.5%;
       }
-      .slick-list{
+      .slick-list {
         overflow: hidden !important;
+      }
+      @font-face {
+        font-family: "solaimanLipi";
+        src: url("./font/SolaimanLipi_22-02-2012.ttf") format("woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        font-family: "solaimanLipi", sans-serif;
+      }
+      .card{
+        margin-right: 10px;
+        margin-left: 10px;
       }
     </style>
   </head>
   <body>
     <!-- header -->
-    <header class="w-full shadow">
+    <!-- <header class="w-full shadow">
       <div class="max-w-screen-xl mx-auto px-2">
         <h1 class="text-3xl font-bold py-8 text-red-800">
           বৈষম্য বিরোধী ছাত্র আন্দোলন
         </h1>
       </div>
-    </header>
+    </header> -->
     <!-- banner -->
     <div
       class="w-full min-h-[80vh] flex items-center justify-center shadow"
-      style="background-image: url(./images/bg.jpg)"
+      style="background-image: url(./images/bg.jpg); background-size: cover;"
     >
-      <div class="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+      <div
+        class="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 p-4"
+      >
         <!-- Grid item 1 -->
         <div class="bg-white p-4 shadow-md rounded-lg">
-          <div class="flex items-center justify-between sm:flex-row flex-col mb-5 p-5">
+          <div
+            class="flex items-center justify-between sm:flex-row flex-col mb-5 p-5"
+          >
             <div class="logo w-32 mr-6 mb-5 sm:mb-0">
               <img src="./images/document.png" alt="document image" />
             </div>
-            <a
-              href="./death_list_form.html"
+            <div>
+              <p
+             
               class="font-bold text-red-800 text-2xl"
             >
               আহত, নিহত ও নিখোঁজ ব্যাক্তির তথ্য প্রদান করুন
-            </a>
+            </p>
+            <p class="font-bold mt-3 text-xl">-বৈষম্য বিরোধী ছাত্র আন্দোলন</p>
+            </div>
           </div>
           <h3 class="text-2xl text-center mb-4">
             তথ্য প্রদানের সময় যা যা প্রয়োজন হবে
@@ -110,7 +131,7 @@
           </div>
         </div>
         <!-- Grid item 2 -->
-        <div class="flex justify-between gap-4  flex-col">
+        <div class="flex justify-between gap-4 flex-col">
           <div
             class="flex items-center justify-between rounded-lg bg-white px-5 py-4 hover:scale-105 transition-all duration-200"
           >
@@ -118,8 +139,7 @@
             <a href="death_list_form.html" class="text-xl ms-6 font-bold">
               নিহত ব্যাক্তির তথ্য প্রদান করুন
             </a>
-            <img src="./images/arrow.png" alt="" class="w-8">
-
+            <img src="./images/arrow.png" alt="" class="w-8" />
           </div>
           <div
             class="flex items-center justify-between rounded-lg bg-white px-5 py-4 hover:scale-105 transition-all duration-200"
@@ -131,7 +151,7 @@
             >
               আহত ব্যাক্তির তথ্য প্রদান করুন
             </a>
-            <img src="./images/arrow.png" alt="" class="w-8">
+            <img src="./images/arrow.png" alt="" class="w-8" />
           </div>
           <div
             class="flex items-center justify-between rounded-lg bg-white px-5 py-4 hover:scale-105 transition-all duration-200"
@@ -143,23 +163,25 @@
             >
               নিখোঁজ ব্যাক্তির তথ্য প্রদান করুন
             </a>
-            <img src="./images/arrow.png" alt="" class="w-8">
-            
+            <img src="./images/arrow.png" alt="" class="w-8" />
           </div>
         </div>
       </div>
     </div>
     <!-- Slick Carousel Container -->
     <div class="w-full">
-      <h1 class="text-center font-bold text-blue-700 my-5 drop-shadow-lg shadow-red-500 text-3xl">
-        সমন্বয়কদের বাণি
+      <h1
+        class="text-center font-bold text-blue-700 my-5 drop-shadow-lg shadow-red-500 text-3xl"
+      >
+        সমন্বয়কদের বার্তা
       </h1>
       <div class="max-w-screen-xl mx-auto my-5 cards_wrapper">
         <div
-          class="carousel ms-6 md:ms-0 cards max-w-screen-lg mx-auto flex items-center justify-between gap-4 my-12 mb-40" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'
+          class="carousel max-w-screen-lg mx-auto cards  my-12 mb-40 w-full"
+          data-slick='{"slidesToShow": 3, "slidesToScroll": 1,"infinite":true,"autoplay":true}'
         >
-          <div class="card rounded-lg me-5 p-4 text-center bg-white border-2">
-            <p class=" mb-24">
+          <div class="card rounded-lg p-4 text-center bg-white border-2">
+            <p class="mb-24">
               বৈষম্য বিরোধী ছাত্র আন্দোলন হলো বাংলাদেশের সাধারণ শিক্ষার্থীদের
               একটি সংগঠন ২০২৪ সালে বাংলাদেশে কোটা আন্দোলনের সময় শিক্ষার্থীদের
               সমন্বয়ে এটি গঠিত হয় এবং এটি কোটা সংস্কার আন্দোলন ও পরবর্তীতে
@@ -172,8 +194,8 @@
               <p class="">সমন্বয়ক</p>
             </div>
           </div>
-          <div class="card rounded-lg me-5 p-4 text-center bg-white border-2">
-            <p class=" mb-24">
+          <div class="card rounded-lg p-4 text-center bg-white border-2">
+            <p class="mb-24">
               বৈষম্য বিরোধী ছাত্র আন্দোলন হলো বাংলাদেশের সাধারণ শিক্ষার্থীদের
               একটি সংগঠন ২০২৪ সালে বাংলাদেশে কোটা আন্দোলনের সময় শিক্ষার্থীদের
               সমন্বয়ে এটি গঠিত হয় এবং এটি কোটা সংস্কার আন্দোলন ও পরবর্তীতে
@@ -186,8 +208,8 @@
               <p class="">সমন্বয়ক</p>
             </div>
           </div>
-          <div class="card rounded-lg me-5 p-4 text-center bg-white border-2">
-            <p class=" mb-24">
+          <div class="card rounded-lg p-4 text-center bg-white border-2">
+            <p class="mb-24">
               বৈষম্য বিরোধী ছাত্র আন্দোলন হলো বাংলাদেশের সাধারণ শিক্ষার্থীদের
               একটি সংগঠন ২০২৪ সালে বাংলাদেশে কোটা আন্দোলনের সময় শিক্ষার্থীদের
               সমন্বয়ে এটি গঠিত হয় এবং এটি কোটা সংস্কার আন্দোলন ও পরবর্তীতে
@@ -200,8 +222,8 @@
               <p class="">সমন্বয়ক</p>
             </div>
           </div>
-          <div class="card rounded-lg me-5 p-4 text-center bg-white border-2">
-            <p class=" mb-24">
+          <div class="card rounded-lg p-4 text-center bg-white border-2">
+            <p class="mb-24">
               বৈষম্য বিরোধী ছাত্র আন্দোলন হলো বাংলাদেশের সাধারণ শিক্ষার্থীদের
               একটি সংগঠন ২০২৪ সালে বাংলাদেশে কোটা আন্দোলনের সময় শিক্ষার্থীদের
               সমন্বয়ে এটি গঠিত হয় এবং এটি কোটা সংস্কার আন্দোলন ও পরবর্তীতে
@@ -214,8 +236,8 @@
               <p class="">সমন্বয়ক</p>
             </div>
           </div>
-          <div class="card rounded-lg me-5 p-4 text-center bg-white border-2">
-            <p class=" mb-24">
+          <div class="card rounded-lg p-4 text-center bg-white border-2">
+            <p class="mb-24">
               বৈষম্য বিরোধী ছাত্র আন্দোলন হলো বাংলাদেশের সাধারণ শিক্ষার্থীদের
               একটি সংগঠন ২০২৪ সালে বাংলাদেশে কোটা আন্দোলনের সময় শিক্ষার্থীদের
               সমন্বয়ে এটি গঠিত হয় এবং এটি কোটা সংস্কার আন্দোলন ও পরবর্তীতে
@@ -228,7 +250,6 @@
               <p class="">সমন্বয়ক</p>
             </div>
           </div>
-   
         </div>
       </div>
     </div>
@@ -238,8 +259,8 @@
         class="max-w-screen-lg mx-auto flex items-center justify-between px-3 py-4 flex-wrap flex-col gap-3 md:flex-row"
       >
         <p class="">যোগাযোগঃ abcd@gmail.com</p>
-        <p class="">©বৈষম্য বিরোধী ছাত্র আন্দোলন</p>
-        <p class="">কারিগরি সহায়তায় ANCOVA</p>
+        <p class="">© বৈষম্য বিরোধী ছাত্র আন্দোলন</p>
+        <p class="">কারিগরি সহায়তায় <a href="https://ancova.com.bd">ANCOVA</a></p>
       </div>
     </footer>
     <script
@@ -257,11 +278,11 @@
     ></script>
     <script>
       $(".carousel").slick({
-        // normal options...
         infinite: false,
-        dots:false,
-        arrows:false,
-        // the magic
+        dots: false,
+        arrows: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
         responsive: [
           {
             breakpoint: 1024,
@@ -274,15 +295,13 @@
             breakpoint: 764,
             settings: {
               slidesToShow: 2,
-              dots: false,
             },
           },
           {
             breakpoint: 520,
             settings: {
               slidesToShow: 1,
-              dots: false,
-            },// destroys slick
+            },
           },
         ],
       });
